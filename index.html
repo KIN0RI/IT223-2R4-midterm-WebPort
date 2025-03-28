@@ -3,28 +3,143 @@
 <head>
     <title>Web Portfolio</title>
 </head>
-<body>
-    <header>
-        <img src="Profile.jpg" alt="Profile image" width="150" height="150">
-        <h1 style="font-family: Georgia, serif;">Nepthalie Brynt Asinero</h1>
-        <p style="font-family: Verdana, sans-serif;">Web Developer | Beginner | Creative Thinker</p>
-    </header>
 
+<style>
+    
+    
+    nav {
+            background-color: #444;
+            padding: 15px;
+            
+        }
+    nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+    }
+    .about-box {
+    width: 50%;
+    padding: 40px;
+    border: none;
+    text-align: left;
+    margin-left: 1%; 
+    font-family: Arial, sans-serif;
+    background-color: transparent;
+    }
+    #about {
+    margin-top: 20px;
+    }
+    #about h2 {
+    font-size: 35px; 
+    }
+
+    #about p {
+    font-size: 30px; 
+    }
+
+    .profile-img {
+    width: 450px;
+    height: 450px;
+    border: 5px solid;
+    border-radius: 50%; 
+    position: absolute;
+    right: 150px; 
+    top: 100px
+    }
+
+    .profile-name, .profile-title {
+    position: absolute;
+    right: 150px; 
+    top: 570px; 
+    text-align: center; 
+    width: 450px; 
+    font-family: Georgia, serif;
+    }
+
+    .profile-title {
+    font-family: Verdana, sans-serif;
+    font-size: 18px; 
+    top: 620px; }
+
+    .contact-info {
+    position: absolute;
+    right: 150px; 
+    top: 700px; 
+    text-align: center; 
+    width: 450px; 
+    font-family: Arial, sans-serif;
+    }
+
+    .contact-info {
+    position: absolute;
+    right: 150px; 
+    top: 720px; 
+    text-align: center; 
+    width: 450px; 
+    font-family: Arial, sans-serif;
+    }
+    .contact-info h2 {
+    font-size: 34px; 
+    font-weight: bold;
+    }
+
+    .contact-icon {
+    width: 55px; 
+    height: 55px;
+    margin: 20px; 
+    cursor: pointer; 
+    }
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+<body>
+
+    <img src="Profile.jpg" alt="Profile image" class="profile-img">
+    <h1 class="profile-name">Nepthalie Brynt Asinero</h1>
+    <p class="profile-title">Web Developer | Beginner | Creative Thinker</p>
+    <section id="contact" class="contact-info">
+        <h2>Contact</h2>
+        <p>
+            <a href="mailto:asinero.nepthaliebrynt@example.com">
+                <img src="gmail-png.webp" alt="Gmail" class="contact-icon">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100015841417251" target="_blank">
+                <img src="Fb.png" alt="Facebook" class="contact-icon">
+            </a>
+            <a href="https://github.com/yourprofile" target="_blank">
+                <img src="git-icon.png" alt="GitHub" class="contact-icon">
+            </a>
+        </p>
+    </section>
+    
+    
     <nav>
-        <table>
-            <tr>
-                <td><a href="#about" style="font-family: Arial, sans-serif;">About Me</a></td>
-                <td><a href="#hobbies" style="font-family: Arial, sans-serif;">Hobbies</a></td>
-                <td><a href="#gallery" style="font-family: Arial, sans-serif;">Gallery</a></td>
-                <td><a href="#contact" style="font-family: Arial, sans-serif;">Contact</a></td>
-            </tr>
-        </table>
-    </nav>
-    <section id="about">
+        <a href="#about">About Me</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>    
+    
+    
+    <section id="about"class="about-box">
         <h2>About Me</h2>
         <p>Hi, I'm Nepthalie Brynt Asinero! I'm a beginner web developer with experience in HTML, and I am passionate about building beautiful, responsive, and functional websites. I enjoy learning new technologies and continuously improving my skills to create user-friendly and visually appealing web experiences. My goal is to design websites that not only look great but also serve a purpose, making information easily accessible and enhancing user interaction.</p>
     </section>
-    <section id="hobbies">
+    
+    
+    
+    <!--<section id="hobbies">
         <h2>Hobbies</h2>
         <ul>
             <li>Reading</li>
@@ -33,6 +148,26 @@
             <li>Sleeping</li>
         </ul>
     </section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <section id="gallery">
         <h2>Gallery</h2>
         <div style="text-align: center;">
@@ -42,8 +177,7 @@
             <img src="gallery4.jpg" alt="Gallery Image 4" width="200" height="250">
         </div>
     </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>You can reach me at: <a href="asinero.nepthaliebrynt@example.com">asinero.nepthaliebrynt@example.com</a></p>
+    
 </body>
-</html>
+
+        
