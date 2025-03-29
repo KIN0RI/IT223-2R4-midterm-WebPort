@@ -20,13 +20,15 @@
            font-weight: bold;
     }
     .about-box {
-    width: 50%;
+    width: 46%;
     padding: 40px;
     border: none;
     text-align: left;
     margin-left: 3%; 
     font-family: Arial, sans-serif;
-    background-color: transparent;
+    background: linear-gradient(to right, #FBAB7E, #F7CE68);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10%;
     }
     #about {
     margin-top: 30px;
@@ -90,11 +92,14 @@
 
     #hobbies-container {
     position: absolute; 
-    left: 150px; 
-    top: 400px; 
-    width: 400px; 
+    left: 100px; 
+    top: 450px; 
+    width: 600px; 
     padding: 20px;
     border: non; 
+    background: linear-gradient(to right, #FBAB7E, #F7CE68);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10%;
     text-align: center;
     }
 
@@ -115,7 +120,7 @@
 }
 
 #hobbies-list li {
-    background-color: white;
+    background-color: #f88440;
     color: black;
     padding: 10px 20px;
     border-radius: 10px;
@@ -130,20 +135,33 @@
 }
 
 #hobbies-list li:hover {
-    background-color: #620000;
+    background-color: #FBAB7E;
     color: white;
     border-color: white;
 }
 
 #gallery {
     position: relative;
-    left: 28%;
-    top: 170px; 
+    left: 31%;
+    top: 230px; 
     transform: translateX(-50%);
     text-align: center;
-    width: 100%;
-    padding-bottom: 100px; 
+    align-items: center;
+    width: 50%; 
+    height: 490px;
+    padding-bottom: 100;
+    border: non; 
+    background: linear-gradient(to right, #FBAB7E, #F7CE68);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    
 }
+
 
 #gallery h2 {
     font-size: 30px;
@@ -164,4 +182,15 @@
     border-radius: 20%;
     border: none;
     margin: 10px; 
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222; 
+    color: white;
+    font-size: 16px;
+    position: relative;
+    width: 100%;
+    top: 400px;
 }
