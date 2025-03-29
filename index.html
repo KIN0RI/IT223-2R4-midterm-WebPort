@@ -8,10 +8,18 @@
 
 <style>
     
+    body {
+            background: linear-gradient(to right, #FBAB7E, #F7CE68);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-y: auto;
+        }
     
     nav {
             background-color: #444;
             padding: 15px;
+            text-align: center;
             
         }
     nav a {
@@ -25,7 +33,7 @@
     padding: 40px;
     border: none;
     text-align: left;
-    margin-left: 1%; 
+    margin-left: 3%; 
     font-family: Arial, sans-serif;
     background-color: transparent;
     }
@@ -90,30 +98,88 @@
     width: 55px; 
     height: 55px;
     margin: 20px; 
-    cursor: pointer; 
+    cursor: pointer;
+    pointer-events: auto; 
+    z-index: 100;
     }
 
-    #hobbies {
-    position: absolute;
-    left: 20%;
-    top: 500px; 
-    width: 40%; 
-    font-size: 30px;
-
+    #hobbies-container {
+    position: absolute; 
+    left: 320px; 
+    top: 550px; 
+    width: 400px; 
+    padding: 20px;
+    border: non; 
+    text-align: center;
     }
-    #hobbies ul {
-    list-style: none; 
+
+    #hobbies-title {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px; 
+    justify-content: center;
+    }
+
+    #hobbies-list {
+    list-style: none;
     padding: 0;
-    display: flex; 
-    gap: 20px; 
+    display: flex;
+    justify-content: center; 
+    gap: 30px; 
+    flex-wrap: nowrap; 
 }
 
-    #hobbies li {
-    display: inline; 
-    font-size: 30px; 
-    }
+#hobbies-list li {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 2px solid #444;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    white-space: nowrap; 
+}
 
+#hobbies-list li:hover {
+    background-color: #620000;
+    color: white;
+    border-color: white;
+}
 
+#gallery {
+    position: absolute;
+    left: 32%;
+    top: 750px; 
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    padding-bottom: 100px; 
+}
+
+#gallery h2 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+#gallery div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+#gallery img {
+    width: 200px; 
+    height: 200px;
+    object-fit: cover; 
+    border-radius: 20%;
+    border: none;
+    margin: 10px; 
+}
 
 
 </style>
@@ -122,22 +188,26 @@
 <body>
 
     <img src="Profile.jpg" alt="Profile image" class="profile-img">
-    <h1 class="profile-name">Nepthalie Brynt Asinero</h1>
+    <h1 class="profile-name">Nepthalie Brynt R. Asiñero</h1>
     <p class="profile-title">Web Developer | Beginner | Creative Thinker</p>
+    
     <section id="contact" class="contact-info">
-        <h2>Contact</h2>
+        <h2>Contacts</h2>
         <p>
-            <a href="mailto:asinero.nepthaliebrynt@example.com">
-                <img src="gmail-png.webp" alt="Gmail" class="contact-icon">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="instaa.png" alt="Insta" class="contact-icon">
             </a>
-            <a href="https://www.facebook.com/profile.php?id=100015841417251" target="_blank">
+            
+            <a href="https://www.facebook.com" target="_blank">
                 <img src="Fb.png" alt="Facebook" class="contact-icon">
-            </a>
-            <a href="https://github.com/yourprofile" target="_blank">
+            
+            
+            <a href="https://github.com/" target="_blank">
                 <img src="git-icon.png" alt="GitHub" class="contact-icon">
             </a>
         </p>
     </section>
+    
     
     
     <nav>
@@ -150,57 +220,33 @@
     
     <section id="about"class="about-box">
         <h2>About Me</h2>
-        <p>Hi, I'm Nepthalie Brynt Asinero! I'm a beginner web developer with experience in HTML, and I am passionate about building beautiful, responsive, and functional websites. I enjoy learning new technologies and continuously improving my skills to create user-friendly and visually appealing web experiences. My goal is to design websites that not only look great but also serve a purpose, making information easily accessible and enhancing user interaction.</p>
+        <p>Hi, I'm Nepthalie Brynt R. Asiñero! I'm a beginner web developer with a moderate experience in HTML, and I am passionate about building beautiful, responsive, and functional websites. I enjoy learning new technologies and continuously improving my skills to create user-friendly and visually appealing web experiences. My goal is to design websites that not only look great but also serve a purpose, making information easily accessible and enhancing user interaction.</p>
     </section>
     
     
-    <section id="hobbies">
-        <h2>Hobbies</h2>
-        <ul>
+    <div id="hobbies-container">
+        <div id="hobbies-title">Hobbies</div>
+        <ul id="hobbies-list">
             <li>Reading</li>
             <li>Gaming</li>
             <li>Sketching</li>
             <li>Sleeping</li>
         </ul>
-    </section>
-    
-    
-    
-    
-    
-    
-    
-    <!--
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    </div>
     
     <section id="gallery">
         <h2>Gallery</h2>
-        <div style="text-align: center;">
-            <img src="gallery1.jpg" alt="Gallery Image 1" width="200" height="250">
-            <img src="gallery2.jpg" alt="Gallery Image 2" width="200" height="250">
-            <img src="gallery3.jpg" alt="Gallery Image 3" width="200" height="250">
-            <img src="gallery4.jpg" alt="Gallery Image 4" width="200" height="250">
+        <div>
+            <img src="gallery1.jpg" alt="Gallery Image 1">
+            <img src="gallery2.jpg" alt="Gallery Image 2">
+            <img src="gallery3.jpg" alt="Gallery Image 3">
+            <img src="gallery4.jpg" alt="Gallery Image 4">
         </div>
     </section>
     
 </body>
+
+
+
 
         
